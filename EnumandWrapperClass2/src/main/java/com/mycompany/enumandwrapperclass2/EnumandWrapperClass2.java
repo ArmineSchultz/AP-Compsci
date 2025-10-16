@@ -94,8 +94,8 @@ public class EnumandWrapperClass2 {
                 
         //print the binary string version of the graduation year
         intGradYear = Integer.parseInt(gradYear);
-        System.out.println("In computer language, you graduate in: " + (intGradYear + 1));
-                
+        System.out.println("In computer language, you graduate in: " + (Integer.toBinaryString(intGradYear) + 1));
+        
         }   
 }
 
