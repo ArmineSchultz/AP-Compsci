@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.game;
+import java.awt.*;
+import javax.swing.*;
+/**
+ *
+ * @author ASchultz2026
+ */
+public class Game  extends JPanel{
+    public Game(){
+        super();
+    }
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("BasicJPanel");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,500);
+        
+        Game panel = new Game();
+        
+        frame.setContentPane(panel);
+        frame.setVisible(true);
+    
+    }
+    public void paintComponent(Graphics g){
+       //tictactoe grid
+       g.setColor(Color.BLACK);
+       g.drawLine(160,450,160,10);//left vertical line
+       g.drawLine(320,450,320,10);//right vertical line
+       g.drawLine(30,160,450,160);//top horizontal line
+       g.drawLine(30,320,450,320);//top horizontal line
+       
+       
+       //Test x for player 1
+       g.setColor(Color.RED);
+       g.drawLine(60,30,125,125);//Up left to Down right
+       g.drawLine(60,125,125,30);//Down left to Up right
+       
+       //Test o for player 2
+       g.setColor(Color.BLUE);
+       g.drawOval(40, 190, 100, 100);
+    }
+}
