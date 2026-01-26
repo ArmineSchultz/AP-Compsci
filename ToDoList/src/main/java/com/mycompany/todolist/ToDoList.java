@@ -14,33 +14,39 @@ public class ToDoList {
     public static void main(String[] args) {
         //Scanner
         Scanner scan = new Scanner(System.in);
-        //task1
-        Task task1 = new Task();
+        
         String another = "y";
         ArrayList ToDoList = new ArrayList();
+        int i = 1;
         
-        System.out.println("Type in do-to tasks and their priority:");
-        task1.setTask(scan.next());
-        ToDoList.add(task1);
-        System.out.println("Would you like to enter another y/n:");
-        
+       
         //while command to add more tasks
-        while (another.equalsIgnoreCase("y"))
-        {        
-            //if (another == "y"){
+        while (another.equalsIgnoreCase("y")){
+            
+            Task task1 = new Task();
+            
             System.out.println("Enter in task to add to list:");
             task1.setTask(scan.next());
+            
+            System.out.println("Type in priority:");
+            task1.setPriority(scan.nextInt());
+            
+            System.out.println("Type in complexity:");
+            task1.setComplexity(scan.nextInt());
+            
             ToDoList.add(task1);
             System.out.println("Would you like to enter another y/n:");
-            another.scan.next();
-            //    }else{
-            //System.out.println("done");
+            another = scan.next();
+            
         }
 
+            //System.out.println("All tasks entered:" + ToDoList);
+            Collections.sort(ToDoList);
+            System.out.println(ToDoList);
         }
 
     }
-}
+
 interface Priority {
     public void setPriority(int priority);
     public int getPriority();
@@ -88,7 +94,10 @@ class Task implements Priority, Complexity, Comparable<Task>{
 //toString method that returns a multi-line des of task
     @Override
     public String toString(){
-        String myString = "Task:" + toDo;
+        String myString = "\n" + 
+                "Task: " + toDo + "\n" +
+                "Priority: " + priority + "\n" +
+                "Complexity: " + complexity;
 
         return myString;
 }
