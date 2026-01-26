@@ -17,7 +17,6 @@ public class ToDoList {
         
         String another = "y";
         ArrayList ToDoList = new ArrayList();
-        int i = 1;
         
        
         //while command to add more tasks
@@ -90,6 +89,8 @@ class Task implements Priority, Complexity, Comparable<Task>{
     }
     public int compareTo(Task otherTask){
         return Integer.compare(this.priority, otherTask.getPriority());
+
+        
     }
 //toString method that returns a multi-line des of task
     @Override
