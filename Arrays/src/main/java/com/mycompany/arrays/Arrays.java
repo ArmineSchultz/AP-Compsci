@@ -3,34 +3,71 @@
  */
 
 package com.mycompany.arrays;
-//import java.util.Scanner;
-import java.util.Arrays;
+
+
 /**
  *
- * @author ASchultz2026
- */ 
+ * @author Owner
+ */
 public class Arrays {
 
-    /*Write out an initialized array "weekDays" with all 7 days of the week. 
-    Print the days of the week out, one day per row. Now resize the array to 5,
-    and copy just the weekdays (so not Saturday or Sunday) to it, and print the 
-    days again, one day per row. Comment your code where you are resizing it.
-
-    For an extra bonus point, add a shuffling method, to change the order of the 
-    days randolmly.
-    */
     public static void main(String[] args) {
-        //Scanner scan = new Scanner(System.in);
+        
         final int WEEK = 7;
-        String WEEKDAYS = "Monday", "Tuesday", "Wednesday", "Thursday", "Friday";
-        int[] list = new int[WEEK];
-        //initialize the array values
-        for (int index = 0; index < WEEK; index++)
-            list[index] = index * WEEKDAYS;
-        list[5] = 999;
-        //Print the array values
-        for (int value : list)
-            System.out.print(value + " ");
+        
+        String[] week = new String[WEEK];
+        String[] weekdays;
+        String[] shuffle;
+        
+        //initialise the array values
+        for (int i = 0; i < WEEK; i++){
+            switch(i){
+                case 0:
+                    week[i] = "Monday";
+                    break;
+                case 1:
+                    week[i] = "Tuesday";
+                    break;
+                case 2:
+                    week[i] = "Wednesday";
+                    break;
+                case 3:
+                    week[i] = "Thursday";
+                    break;
+                case 4:
+                    week[i] = "Friday";
+                    break;
+                case 5:
+                    week[i] = "Saturday";
+                    break;
+                case 6:
+                    week[i] = "Sunday";
+                    break;
+                default:
+                    week[i] = "Sunday";   
+              }
+        }
+        
+        //print out all days of the week
+        System.out.println("The days of the week are:");
+        for (int index = 0; index < week.length; index++){
+            System.out.println(week[index]);
+        }
+        
+        //only weekdays
+        weekdays = new String[5];
+        //copy current array into weekdays
+        for(int j =0; j < 5; j++){
+            weekdays[j] = week[j];
+        }
+        
+        //space
+        System.out.println();
+        //print out weekdays
+        System.out.println("The weekdays are:");
+        for (int index = 0; index <= weekdays.length - 1; index++){
+            System.out.println(weekdays[index]);
+        }
+        
     }
 }
-
