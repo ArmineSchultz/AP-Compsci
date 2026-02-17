@@ -10,34 +10,103 @@ package com.mycompany.vehicles;
  */
 public class Vehicles {
 
-    public static void main(String[] args) {
-        Vehicle car = new Vehicle("Ford", 125, 5, 40);
-        System.out.println(car);
+        public static void main(String[] args) {
+        Vehicle thing = new Vehicle("Ford", 125, 5, 40);
+        System.out.println(thing);
+        Car buggie = new Car();
+        buggie.wheels = 4;
+        buggie.color = "Light Blue";
+        buggie.brandName = "Voltzwagon";
+        buggie.speed = 120;
+        buggie.passengers = 5;
+        buggie.cargoWeight = 30;
+        System.out.println(buggie);
     }
 }
 
     class Car extends Vehicle{
         int wheels = 4;
         String color = "";
+        public String toString() {
+            String result = "";
+            result = "Brand: \t\t\t" + getBrand() + "\n" +
+            "Speed: \t" + getSpeed() + "\n" + 
+            "Passengers: \t" + getPassengers() + "\n" +
+            "Cargo (lbs): \t" + getCargoWeight() + "\n" +
+            "Wheels: \t" + wheels + "\n" +
+            "Color: \t" + color;
+            return result;
+        }
         
        
     }
 
     class Boat extends Vehicle{
         int length =  0;
+        int sails = 0;
+        double knots = 0.0;
         String color = "";
+        public String toString() {
+            String result = "";
+            result = "Brand: \t\t\t" + getBrand() + "\n" +
+            "Speed: \t" + getSpeed() + "\n" + 
+            "Passengers: \t" + getPassengers() + "\n" +
+            "Cargo (lbs): \t" + getCargoWeight() + "\n" +
+            "Length(m): \t" + length + "\n" +
+            "Sail(s): \t" + sails + "\n" +
+            "Speed(knots): \t" + knots + "\n" +
+            "Color: \t" + color;
+            return result;
     }
 
     class Airplane extends Vehicle{
         int length = 0;
         String type = "";
+        String color = "";
+        public String toString() {
+            String result = "";
+            result = "Brand: \t\t\t" + getBrand() + "\n" +
+            "Speed: \t" + getSpeed() + "\n" + 
+            "Passengers: \t" + getPassengers() + "\n" +
+            "Cargo (lbs): \t" + getCargoWeight() + "\n" +
+            "Length(m): \t" + length + "\n" +
+            "Type of plane: \t" + type + "\n" +
+            "Color: \t" + color;
+            return result;
     }
 
-    class Racecar extends Vehicle{
+    class Train extends Vehicle{
+        int car = 0;
+        String color = "";
+        public String toString() {
+            String result = "";
+            result = "Brand: \t\t\t" + getBrand() + "\n" +
+            "Speed: \t" + getSpeed() + "\n" + 
+            "Passengers: \t" + getPassengers() + "\n" +
+            "Cargo (lbs): \t" + getCargoWeight() + "\n" +
+            "Car(s): \t" + car + "\n" +
+            "Color: \t" + color;
+            return result;
         
     }
 
-    class 
+    class CarrierPigeon extends Vehicle{
+        int letter = 0;
+        String typePigeon = "";
+        public String toString() {
+            String result = "";
+            result = "Brand: \t\t\t" + getBrand() + "\n" +
+            "Speed: \t" + getSpeed() + "\n" + 
+            "Passengers: \t" + getPassengers() + "\n" +
+            "Cargo (lbs): \t" + getCargoWeight() + "\n" +
+            "Letter(s): \t" + letter + "\n" +
+            "Type of Pigeon: \t" + typePigeon;
+            return result;
+        
+        
+    }
+
+
       // The Base Vehicle Class, implements the Speedometer interface
         public class Vehicle implements Speedometer{
             //base (Class wide) variables
@@ -91,7 +160,7 @@ public class Vehicles {
         public String toString(){
             String result = "";
             result = "Brand: \t\t\t" + getBrand() + "\n" +
-            ": \t" + getSpeed() + "\n" + 
+            "Speed: \t" + getSpeed() + "\n" + 
             "Passengers: \t" + getPassengers() + "\n" +
             "Cargo (lbs): \t" + getCargoWeight() + "\n";
             return result;
