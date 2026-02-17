@@ -171,3 +171,8 @@ public class Vehicles {
         public void setSpeed(double inSpeed);
         public double getSpeed();
         }
+    }
+    }
+    }
+    }
+    
