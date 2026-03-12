@@ -10,9 +10,8 @@ package com.mycompany.sort;
  */
 public class Sort {
 
- public static void main(String[] args)
-{
-Contact[] friends = new Contact[9];
+    public static void main(String[] args) {
+        Contact[] friends = new Contact[9];
 friends[0] = new Contact("John", "Smith", "610-555-7384");
 friends[1] = new Contact("Sarah", "Barnes", "215-555-3827");
 friends[2] = new Contact("Aaron", "Riley", "733-555-2969");
@@ -106,14 +105,16 @@ int result;
 String otherPhone = ((Contact)other).getPhone();
 String otherFirst = ((Contact)other).getFirstName();
 String otherLast = ((Contact)other).getLastName();
-if (phone.equals(otherPhone))
-    result = phone.compareTo(otherPhone);
-else
-result = firstName.compareTo(otherFirst);
 
-
-if(firstName.equals(otherFirst))
-result = lastName.compareTo(otherLast);
+if (phone.equals(otherPhone)){
+    if (lastName.equals(otherLast)){
+        result = firstName.compareTo(otherFirst);
+    }else{
+    result = lastName.compareTo(otherLast);
+    }
+}else{
+result = phone.compareTo(otherLast);
+}
 return result;
 }
 
