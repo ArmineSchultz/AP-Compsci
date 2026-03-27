@@ -1,17 +1,16 @@
-   /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package textfilesassignment;
 
-
 /**
  *
  * @author ASchultz2026
  */
-        
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.PrintWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -65,11 +64,27 @@ public class TextFilesAssignment {
         
         //bonus Scanner input 
         Scanner scan = new Scanner(System.in);
+        String inPath = "TextFiles/input.txt";//input file name
         
-        System.out.println("Enter in name, email address, graduation year and username:");
-        String input = scan.next();
+        System.out.println("Enter in name, email address, graduation year and username: (Type DONE when done)" );
         
-        System.out.println("You entered:" + input);
+        try (PrintWriter writer = new PrintWriter(new FileWriter(inPath,
+                true))) {
+            while(true) {
+                String input = scan.nextLine().trim();
+                
+                if (input.equalsIgnoreCase("DONE")){
+                    break;
+            }
+                writer.println(input);
+        }
+            System.out.println("Data saved to" + inPath);
+        }catch (IOException e){
+            System.err.println("Error writing to file:" + e.getMessage());
+        }finally{
+            scan.close();
+        }            
     }
 
-}
+  }
+    
