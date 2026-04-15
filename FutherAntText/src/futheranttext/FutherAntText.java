@@ -9,16 +9,10 @@ package futheranttext;
  * @author ASchultz2026
  */
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.PrintWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.util.Locale;  
 import java.util.Scanner;
 
 public class FutherAntText {
@@ -28,18 +22,31 @@ public class FutherAntText {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //create a File object represneting the file
-        File file = new File("Contacts.txt");
+
         int intLine = 0;
         Scanner read;
         String a, e, y, n;
         String name = "";
         String email = "";
         String gradYear = "";
-        String username = "";
 
-        try(Scanner scanner = new Scanner(file)){
-            String line = scaner.nextLine();
+        Scanner scan = new Scanner(System.in);
+        String inPath = "TextFiles/input.txt";
+        String outPath = "TextFiles/ordered.txt";
+        
+        System.out.println("""
+                            Press a to add contact details 
+                            Press e to order by email address
+                            Press y to order by grad year
+                            Press n to order by name""");
+        
+        try(PrintWriter writer = new PrintWriter(new FileWriter(inPath,
+            true))){
+            while(true){
+                String input = scan.nextLine().trim();
+                
+            String line = scan.nextLine();
+            //if user enters a
             if(intLine > 0)
                 System.out.println(line);
             else{
@@ -47,27 +54,43 @@ public class FutherAntText {
                 name = read.next();
                 email = read.next();
                 gradYear = read.next();
-                username = read.next();
             }
-            Contact c = new Contact(name, email, gradYear, username);
+            Contact c = new Contact(name, email, gradYear);
             System.out.println(c);
-            intLine++;
+            intLine++; 
+            
+            //if user enters e
+            
+            //if user enters y
+            
+            //if user enters n
+            
+                if(input.equalsIgnoreCase("DONE")){
+                    break;
+                }
+                writer.println(input);
+            }
+                System.out.println("Data Saved to" + inPath);
+        }catch (IOException ex){
+            System.err.println("Error writing to file:" + ex.getMessage());
+        }finally{
+                scan.close();
+                }
         }
     }
     
-}
+
 
 class Contact{
     private String name = "";
     private String email = "";
     private String gradYear = "";
-    private String username = "";
     
-    public Contact(String n, String e, String year, String u) {
+    public Contact(String n, String e, String year) {
         name = n;
         email = e;
         gradYear = year;
-        username = u;
+
         
     }
     
@@ -75,8 +98,40 @@ class Contact{
         String result = "";
             result = "Name:" + name + "\n" +
                     "Email:" + email + "\n" +
-                    "Grad Year:" + gradYear + "\n" +
-                    "Username:" + username;
+                    "Grad Year:" + gradYear;
             return result;
+    }
+}
+
+class Order{
+    private String name, email, year;
+    private String e, y, n;
+    public static void selectionOrder()
+    {
+        
+    }
+    public String compareTo(Object other)
+    {
+        String result;
+        String otherName = ((Contact)other).getName;
+        String otherEmail = ((Contact)other).getEmail;
+        String otherYear = ((Contact)other).getYear;
+        
+        if (){
+            
+        }
+        return result;
+    }
+    public String getName()
+    {
+        return n;
+    }
+    public String getEmail()
+    {
+        return e;
+    }
+    public String getYear()
+    {
+        return y;
     }
 }
