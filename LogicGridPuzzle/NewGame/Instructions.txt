@@ -1,0 +1,15 @@
+		The Logic Grid Puzzle Game
+
+This is a fun game that requires a lot of logical thinking
+based off of context clues. Try to fill out the grid
+completely and correctly with the clues you are given. 
+
+
+Place 'o' where you believe the clue aligns with the person, 
+place and/or object in the game, Otherwise...
+			                     ...Place 'x' 
+where you decide that those clues don't align with the person, 
+place and/or object in the game.
+
+Press "n" to begin a New Game.
+

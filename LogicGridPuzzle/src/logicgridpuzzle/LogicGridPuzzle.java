@@ -8,6 +8,9 @@ package logicgridpuzzle;
  *
  * @author ASchultz2026
  */
+import java.io.File;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -25,29 +28,51 @@ public class LogicGridPuzzle {
         + theme(travel/crime/fantasy)*/
         Scanner scan = new Scanner(System.in);
         String input = "";
-        String game = "";
-        String theme, travel, crime, fantasy;
-        String difficulty, easy, medium, hard;
-
-        String inPath = "NewGame/Theme/Difficulty.txt";
+        String travel, crime, fantasy;
+        String easy, medium, hard;
+        String instructionsPath = "NewGame/Instructions.txt";
+        String themePath = "NewGame/Theme/ChooseTheme.txt";
+        String difficultyPath = "NewGame/Theme/Travel/Difficulty/ChooseDifficulty.txt";
         
-
         
-        while(input.equalsIgnoreCase("n")){
-            System.out.println("""
-                                    Logic Grid Puzzle
-                              Press 'n' to begin New Game.
-                              """);
-            game = scan.nextLine();
+            //read the instructions file to the game
+            try(Scanner scanner = new Scanner(new File(instructionsPath))){
+                while(scanner.hasNextLine()){
+                    System.out.println(scanner.nextLine());
+                }
+            }catch (IOException e){
+            System.err.println("An error occurred" + e.getMessage());
+        }
+ 
+            String game = scan.nextLine();//scanning n
             
-            System.out.println("""
-                                    Choose Theme
-                              Type in choice of theme:
-                                -Travel
-                                -Crime
-                                -Fantasy
-                              """);
-            theme = scan.nextLine();
+            //read the theme file
+            try(Scanner scanner = new Scanner(new File(themePath))){
+                while(scanner.hasNextLine()){
+                    System.out.println(scanner.nextLine());
+            }
+            }catch (IOException e){
+            System.err.println("An error occurred" + e.getMessage());
+        }
+ 
+            String theme = scan.nextLine();//scanning theme
+            
+            //switch case depending on theme choosen
+
+        
+            //read the dificulty file
+             try(Scanner scanner = new Scanner(new File(difficultyPath))){
+                while(scanner.hasNextLine()){
+                    System.out.println(scanner.nextLine());
+            }
+            }catch (IOException e){
+            System.err.println("An error occurred" + e.getMessage());
+        }
+ 
+            String difficulty = scan.nextLine();//scanning difficulty  
+            
+            
+        while(input.equalsIgnoreCase("n")){
             
             System.out.println("""
                                     Choose Difficulty
@@ -61,10 +86,15 @@ public class LogicGridPuzzle {
             Game newGame = new Game(theme, difficulty);
             System.out.println(newGame);
     }
-    }
+
     
+    }
+
     //prompt to see highscores
-         ArrayList<Score> highscores = new ArrayList<>();
+         //ArrayList<Score> highscores = new ArrayList<>();
+         
+         //Score player = new Score();
+         //highscore.add(player);
     
 }
 
@@ -74,8 +104,22 @@ interface difficulty{
     
 }
 interface theme{
+    private String Theme = "";
+    
     public void setTheme(String Theme);
     public String getTheme();
+    
+    switch(inT.equalsIgnoreCase()){
+        case "Travel":
+            difficulty path;
+            break;
+        case "Crime":
+            difficulty path;
+            break;
+        case "Fantasy" :
+            difficulty path;
+            break; 
+    }
 }
 
 class Game implements difficulty, theme{
@@ -112,7 +156,7 @@ class Game implements difficulty, theme{
 }
 }
 
-interface name{
+/*interface name{
     public void setName(String name);
     public String getName(String name);
 }
@@ -133,4 +177,4 @@ class Score implements name{
     public String getName(){
         return name;
     }
-}
+}*/
