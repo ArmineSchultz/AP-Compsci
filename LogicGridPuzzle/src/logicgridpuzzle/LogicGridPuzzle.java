@@ -32,9 +32,9 @@ public class LogicGridPuzzle {
         String easy, medium, hard;
         String instructionsPath = "NewGame/Instructions.txt";
         String themePath = "NewGame/Theme/ChooseTheme.txt";
-        String difficultyPath = "NewGame/Theme/Travel/Difficulty/ChooseDifficulty.txt";
+        String easyTravel = "NewGame/Theme/Travel/Easy1.txt";
         
-        
+        while (input.equalsIgnoreCase("n")){
             //read the instructions file to the game
             try(Scanner scanner = new Scanner(new File(instructionsPath))){
                 while(scanner.hasNextLine()){
@@ -56,12 +56,12 @@ public class LogicGridPuzzle {
         }
  
             String theme = scan.nextLine();//scanning theme
-            
+        }
             //switch case depending on theme choosen
 
         
             //read the dificulty file
-             try(Scanner scanner = new Scanner(new File(difficultyPath))){
+             try(Scanner scanner = new Scanner(new File(easyTravel))){
                 while(scanner.hasNextLine()){
                     System.out.println(scanner.nextLine());
             }

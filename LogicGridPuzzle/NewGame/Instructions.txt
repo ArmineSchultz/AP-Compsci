@@ -13,3 +13,4 @@ place and/or object in the game.
 
 Press "n" to begin a New Game.
 
+or press "h" to view high scores.

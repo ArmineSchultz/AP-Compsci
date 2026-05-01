@@ -6,4 +6,5 @@ The three game themes, and difficulty levels to choose from are:
 	- Crime			-Medium
 	- Fantasy		-Hard
 
-Type in the theme and difficulty level you would like to play.
+Type in the theme and difficulty level you would like to play. 
+ex. Theme, level
