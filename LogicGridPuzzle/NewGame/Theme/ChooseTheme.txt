@@ -1,5 +1,3 @@
-
-
 The three game themes, and difficulty levels to choose from are:
 
 	- Travel		-Easy

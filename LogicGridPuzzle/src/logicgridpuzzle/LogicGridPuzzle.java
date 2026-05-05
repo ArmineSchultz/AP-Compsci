@@ -6,7 +6,7 @@ package logicgridpuzzle;
 
 /**
  *
- * @author ASchultz2026
+ * @author Owner
  */
 import java.io.File;
 import java.io.BufferedWriter;
@@ -34,7 +34,7 @@ public class LogicGridPuzzle {
         String themePath = "NewGame/Theme/ChooseTheme.txt";
         String easyTravel = "NewGame/Theme/Travel/Easy1.txt";
         
-        while (input.equalsIgnoreCase("n")){
+
             //read the instructions file to the game
             try(Scanner scanner = new Scanner(new File(instructionsPath))){
                 while(scanner.hasNextLine()){
@@ -43,7 +43,7 @@ public class LogicGridPuzzle {
             }catch (IOException e){
             System.err.println("An error occurred" + e.getMessage());
         }
- 
+         while (input.equalsIgnoreCase("n")){
             String game = scan.nextLine();//scanning n
             
             //read the theme file

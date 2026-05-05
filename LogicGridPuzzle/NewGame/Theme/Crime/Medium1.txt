@@ -1,20 +1,32 @@
 CRIME _ MEDIUM _ LEVEL 1 CLUES
 
 
-1. a
+The Missing Briefcase
 
-2. a
+A Briefcase filled with donation money was stolen
+from a office building. The four suspects include
+Gabby, Olivia, Karl and Greg. Each were found in 
+a different room, at different times and holding
+different items. 
+It is your job to find the thief!
 
-3. a
+1. The person in the Lobby was there at 1:00 PM.
 
-4. a
+2. Olivia was seen at 3:00 PM.
 
-5. a
+3. The person with the Keys was in the Office.
 
-6. a
+4. Karl was not in the Break Room.
+ 
+5. The Conference Room was used at 4:00 PM.
 
-7. a
+6. The person with the Coffee was seen earlier
+   than Greg.
 
-8. a
+7. Gabby was in the Break Room.
 
-9. a
+8. The person with the Phone was in the Lobby.
+
+9. Olivia was not in the Office.
+
+10. The person with the Folder was seen at 2:00 PM.

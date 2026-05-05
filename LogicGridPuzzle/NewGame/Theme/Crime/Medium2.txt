@@ -1,20 +1,37 @@
 CRIME _ MEDIUM _ LEVEL 2 CLUES
 
 
-1. a
+An expensive watch gone missing
 
-2. a
+Three luxurious watches were on display at a
+jewelry store. The dark sapphire blue watch 
+in the center was stolen by either Kacy, 
+Lena, Henry or Claude. Each was found in a
+different area, at different times and in 
+possession of different objects. 
+It is your job to find the thief!
 
-3. a
+1. The person at the Front Desk was there at
+   11:00 AM.
 
-4. a
+2. Lena was seen at 1:00 PM.
 
-5. a
+3. The person with the Wallet was in the Back
+   Room.
 
-6. a
+4. Henry was not in the Display Room.
 
-7. a
+5. The Hallway was used at 2:00 PM.
 
-8. a
+6. The person with the Bag was seen earlier
+   than Claude.
 
-9. a
+7. Kacy was in the Display Room.
+
+8. The person with the Sunglass was at the 
+   Front Desk. 
+
+9. Claude was not in the Back Room.
+
+10. The person with the Receipt was seen at 
+    12:00 PM.

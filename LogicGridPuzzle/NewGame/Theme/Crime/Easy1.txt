@@ -1,20 +1,29 @@
 CRIME _ EASY _ LEVEL 1 CLUES
 
 
-1. a
+The case of the missing Necklace!
 
-2. a
+  A valuable necklace has been stolen from the 
+Moylan Mansion. There are four suspects including 
+Camilla, Josey, Gerald, and Max. Each suspect was 
+seen at a different location, at different time 
+and carrying a different item.
+It is your job to identify the thief!
+ 
 
-3. a
+1. Camilla was seen earlier than the person in
+   the Garden.
 
-4. a
+2. The person with the Umbrella was in the Library.
 
-5. a
+3. Josey was not in the Kitchen.
 
-6. a
+4. The Backpack was seen at 1:00 PM.
 
-7. a
+5. Gerald was in the Office.
 
-8. a
+6. The person in the Garden was seen at 4:00 PM.
 
-9. a
+7. Max had the Laptop.
+
+8. The person in the Kitchen was seen at 2:00 PM.

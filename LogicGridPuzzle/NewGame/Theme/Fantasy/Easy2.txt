@@ -1,20 +1,56 @@
 FANTASY _ EASY _ LEVEL 2 CLUES
 
 
-1. a
+Offerings to the Great Mountain Dragon
 
-2. a
+Every year, messengers from different kingdoms
+are sent to give gifts to the Great Mountain
+Dragon in return for bountiful crops and other
+agricultural things. Find out which kingdom and 
+gifts Klyde, Elric, Mira and Jade coming bearing 
+gifts from.
 
-3. a
+1. The messenger from Emberfall brought the Golden
+   Crown.
 
-4. a
+2. Kylde is not from Permaforma.
 
-5. a
+3. The messenger from Stormreach brought the
+   Enchanted Sword.
 
-6. a
+4. Elric is from Dawnmere.
 
-7. a
+5. Jade did not bring the Jeweled Chalice.
 
-8. a
+6. The messenger from Permaforma brought the
+   Mystic Amulet.
 
-9. a
+7. Mira is not from Emberfall.
+
+8. Kylde brought the Jeweled Chalice. 
+
+SET UP:
+_________________________________________________________________________________
+|          | KYLDE | ELRIC | MIRA | JADE  | CRYSTAL | PHOENIX | SHADOW | SILVER |
+|	   |	   |	   |	  |       |  ORB    | FEATHER | CLOAK  | DAGGER |
+|__________|_______|_______|______|_______|_________|_________|________|________|  
+|MAGE      |       |       |	  |	  |	    |	      |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|HEALER    |       |       |      |       |         |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|RANGER    |       |       |      |       |         |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|ALCHEMIST |       |       |      |       |	    |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|CRYSTAL   |       |       |      |       |
+|ORB       |       |       |      |       |
+|__________|_______|_______|______|_______|
+|PHOENIX   |       |       |      |       |
+|FEATHER   |       |       |      |       |
+|__________|_______|_______|______|_______|
+|SHADOW    |       |       |      |       |
+|CLOAK     |       |	   |	  |       |
+|__________|_______|_______|______|_______|
+|SILVER    |       |	   |      |       |
+|DAGGER    |       |	   |	  |       |
+|__________|_______|_______|______|_______|

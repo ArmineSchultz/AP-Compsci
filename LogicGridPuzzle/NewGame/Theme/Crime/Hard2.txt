@@ -1,20 +1,38 @@
 CRIME _ HARD _ LEVEL 2 CLUES
 
 
-1. a
+The Disappearance of Flower Diamond 
 
-2. a
+A luxury hotel had the privilege to feature the rare 
+Flower Diamond in the center of their lobby. However,
+not even 2 days into the exhibit, it was stolen! The 
+five suspects include Jasper, Sydney, Tony, Sofia, 
+and Logan, each were seen in a different area, at
+different times and seen carrying different items.
+It is your job to identify the thief!
 
-3. a
+1. The person in the Penthouse was there at 9:00 PM.
 
-4. a
+2. Jasper was seen earlier than the person at the Gym.
 
-5. a
+3. The person with the Suitcase was in the Parking
+   Garage. 
 
-6. a
+4. Sydney was seen at 6:00 PM.
 
-7. a
+5. The Restaurant visit happened one hour after Sofia.
+ 
+6. Tony did not have the Phone.
 
-8. a
+7. The person with the Key was seen at 5:00 PM.
 
-9. a
+8. Logan was not in the Lobby.
+
+9. The Gym was visited at 8:00 PM. 
+
+10. The person with the jacket was seen later than the
+    person in the Lobby. 
+
+11. Sofia was not in the Parking Garage.
+
+12. The Phone was carried in the Restaurant. 

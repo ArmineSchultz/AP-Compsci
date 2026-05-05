@@ -1,20 +1,53 @@
 FANTASY _ EASY _ LEVEL 1 CLUES
 
 
-1. a
+The Apprentice Trials
 
-2. a
+Four to-be-apprentices- Ariah, Brome, Caeleon,and
+Dolren- are each equipped with different 
+magic roles and a magical item. 
+It is your job to learn what kind of magic these
+people have.
 
-3. a
+1. The Mage carries the Crystal Orb.
 
-4. a
+2. Ariah is not the Healer.
 
-5. a
+3. The one with the Phoenix Feather is the Healer.
 
-6. a
+4. Brome is the Ranger.
 
-7. a
+5. The Ranger does not carry the Silver Dagger.
 
-8. a
+6. Caeleon carries the Shadow Cloak.
 
-9. a
+7. Dolren is not the Alchemist.
+
+8. The Alchemist carries the Silver Dagger.
+
+
+SET UP:
+______________________________________________________________________________________
+|          | ARIAH | BROME | CAELEON | DOLREN  | CRYSTAL | PHOENIX | SHADOW | SILVER |
+|	   |	   |	   |	     |	       |   ORB   | FEATHER | CLOAK  | DAGGER |
+|__________|_______|_______|_________|_________|_________|_________|________|________|  
+|MAGE      |       |       |	     |	       |	 |	   |	    |        |
+|__________|_______|_______|_________|_________|_________|_________|________|________|
+|HEALER    |       |       |	     |         |         |         |        |        |
+|__________|_______|_______|_________|_________|_________|_________|________|________|
+|RANGER    |       |       | 	     |	       |         |         |        |        |
+|__________|_______|_______|_________|_________|_________|_________|________|________|
+|ALCHEMIST |       |       |	     |         |	 |	   |	    |	     |
+|__________|_______|_______|_________|_________|_________|_________|________|________|
+|CRYSTAL   |       |       |	     |         |   
+|ORB       |       |       |         |         |
+|__________|_______|_______|_________|_________|
+|PHOENIX   |       |       |	     |         |
+|FEATHER   |       |       |         |         |
+|__________|_______|_______|_________|_________|
+|SHADOW    |       |       |	     |         |
+|CLOAK     |       |	   |	     |         |
+|__________|_______|_______|_________|_________|
+|SILVER    |       |	   |	     |         |
+|DAGGER    |       |	   |	     |         |
+|__________|_______|_______|_________|_________|
