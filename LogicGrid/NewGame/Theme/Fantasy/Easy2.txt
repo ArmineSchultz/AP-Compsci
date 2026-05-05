@@ -1,0 +1,56 @@
+FANTASY _ EASY _ LEVEL 2 CLUES
+
+
+Offerings to the Great Mountain Dragon
+
+Every year, messengers from different kingdoms
+are sent to give gifts to the Great Mountain
+Dragon in return for bountiful crops and other
+agricultural things. Find out which kingdom and 
+gifts Klyde, Elric, Mira and Jade coming bearing 
+gifts from.
+
+1. The messenger from Emberfall brought the Golden
+   Crown.
+
+2. Kylde is not from Permaforma.
+
+3. The messenger from Stormreach brought the
+   Enchanted Sword.
+
+4. Elric is from Dawnmere.
+
+5. Jade did not bring the Jeweled Chalice.
+
+6. The messenger from Permaforma brought the
+   Mystic Amulet.
+
+7. Mira is not from Emberfall.
+
+8. Kylde brought the Jeweled Chalice. 
+
+SET UP:
+_________________________________________________________________________________
+|          | KYLDE | ELRIC | MIRA | JADE  | GOLDEN  |ENCHANTED| MYSTIC | JEWELED|
+|	   |	   |	   |	  |       | CROWN   |  SWORD  | AMULET | CHALICE|
+|__________|_______|_______|______|_______|_________|_________|________|________|  
+|DAWNMERE  |       |       |	  |	  |	    |	      |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|PERMAFORMA|       |       |      |       |         |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|EMBERFALL |       |       |      |       |         |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|STORMREACH|       |       |      |       |	    |         |        |        |
+|__________|_______|_______|______|_______|_________|_________|________|________|
+|GOLDEN    |       |       |      |       |
+|CROWN     |       |       |      |       |
+|__________|_______|_______|______|_______|
+|ENCHANTED |       |       |      |       |
+|SWORD     |       |       |      |       |
+|__________|_______|_______|______|_______|
+|MYSTIC    |       |       |      |       |
+|AMULE     |	   |	   |      |       |
+|__________|_______|_______|______|_______|
+|JEWELED   |	   |       |      |       |
+|CHALICE   |	   |	   |      |       |
+|__________|_______|_______|______|_______|

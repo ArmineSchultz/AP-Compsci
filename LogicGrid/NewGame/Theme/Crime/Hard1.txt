@@ -1,0 +1,39 @@
+CRIME _ HARD _ LEVEL 1 CLUES
+
+
+The Case of the missing Onyx Sphinx
+
+During a city museum gala, the priceless Onyx Sphinx
+was stolen. There were five suspects at the scene: 
+Blake, Allison, Mason, Hannah, and Peter. Each were 
+found in a different exhibit room, at different times, 
+and carrying different items.
+It is your job to find the thief!
+
+1. The person in the Security Room was there later than
+   Blake.
+
+2. Allison was in the Modern Art room.
+
+3. The person with the Flashlight was in the Storage
+   room.
+
+4. Mason was seen at 8:00 PM.
+
+5. The Sculpture Hall visit happened at 6:00 PM.
+
+6. The person with the Keycard was seen one hour before 
+   Hannah.
+
+7. Peter did not have the Backpack.
+
+8. The Ancient Art room was visited at 9:00 PM.
+
+9. The person with the Gloves was seen earlier than 
+   the person in the Modern Art room.
+
+10. Hannah was not in he Storage room.
+
+11. The Tablet was carried at 10:00 PM.
+
+12. Blake was not in the Security Room or Storage. 
