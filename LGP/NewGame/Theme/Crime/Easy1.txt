@@ -1,0 +1,55 @@
+CRIME _ EASY _ LEVEL 1 CLUES
+
+
+The case of the missing Necklace!
+
+  A valuable necklace has been stolen from the 
+Moylan Mansion. There are four suspects including 
+Camilla, Josey, Gerald, and Max. Each suspect was 
+seen at a different location, at different time 
+and carrying a different item.
+It is your job to identify the thief!
+ 
+
+1. Camilla was seen earlier than the person in
+   the Garden.
+
+2. The person with the Umbrella was in the Library.
+
+3. Josey was not in the Kitchen.
+
+4. The Backpack was seen at 1:00 PM.
+
+5. Gerald was in the Office.
+
+6. The person in the Garden was seen at 4:00 PM.
+
+7. Max had the Laptop.
+
+8. The person in the Kitchen was seen at 2:00 PM.
+
+SET UP:
+_________________________________________________________________________________
+|          | CAMILLA | JOSEY | GERALD | MAX |  | ELRIC | MIRA | JADE  | GOLDEN  |ENCHANTED| MYSTIC | JEWELED|
+|	   |	     |	     |	      |     | CROWN   |  SWORD  | AMULET | CHALICE|
+|__________|_________|_______|________|_____|_________|_________|________|________|  
+|LIBRARY   |         |       |	      |     |	  |	    |	      |        |        |
+|__________|_________|_______|________|_____|_________|_________|________|________|
+|GARDEN    |         |       |        |     |         |         |        |        |
+|__________|_________|_______|________|_____|_________|_________|________|________|
+|OFFICE    |         |       |        |     |         |         |        |        |
+|__________|_________|_______|________|_____|_________|_________|________|________|
+|KITCHEN   |         |       |        |     |	    |         |        |        |
+|__________|_________|_______|________|_____|_________|_________|________|________|
+|GOLDEN    |         |       |        |     |
+|CROWN     |         |       |        |     |
+|__________|_________|_______|________|_____|
+|ENCHANTED |         |       |        |     |
+|SWORD     |         |       |        |     |
+|__________|_________|_______|________|_____|
+|MYSTIC    |         |       |        |     |
+|AMULE     |	     |	     |        |     |
+|__________|_________|_______|________|_____|
+|JEWELED   |	     |       |        |     |
+|CHALICE   |	     |	     |        |     |
+|__________|_________|_______|________|_____|
