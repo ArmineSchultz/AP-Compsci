@@ -39,17 +39,20 @@ public class LGP {
         String easyCrime = "NewGame/Theme/Crime/Easy1.txt";
         String mediumCrime = "NewGame/Theme/Crime/Medium1.txt";
         String hardCrime = "NewGame/Theme/Crime/Hard1.txt";
-        
+            
+
             try(Scanner scanner = new Scanner(new File(instructionsPath))){
                 while(scanner.hasNextLine()){
+                    
                     System.out.println(scanner.nextLine());
                 }
             }catch (IOException e){
-            System.err.println("An error occurred" + e.getMessage());
-        }
+                    System.err.println("An error occured " + e.getMessage() + " instructionsPath") ;
+ 
+            }
                while (input.equalsIgnoreCase("n")){
             String game = scan.nextLine();//scanning n
-            System.out.println(game);
+            //System.out.println(game);
             //read the theme file
             try(Scanner scanner = new Scanner(new File(themePath))){
                 System.out.println("In themePath");
@@ -57,7 +60,7 @@ public class LGP {
                     System.out.println(scanner.nextLine());
             }
             }catch (IOException e){
-            System.err.println("An error occurred" + e.getMessage());
+            System.err.println("An error occurred " + e.getMessage() + " themePath");
         }
              String theme = scan.nextLine();//scanning theme
         }
