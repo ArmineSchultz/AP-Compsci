@@ -1,8 +1,8 @@
-The three game themes, and difficulty levels to choose from are:
+The two game themes, and three difficulty levels to choose from are:
 
-	- Travel		-Easy
+	- Fantasy		-Easy
 	- Crime			-Medium
-	- Fantasy		-Hard
+				-Hard
 
 Type in the theme and difficulty level you would like to play. 
 ex. Theme, level

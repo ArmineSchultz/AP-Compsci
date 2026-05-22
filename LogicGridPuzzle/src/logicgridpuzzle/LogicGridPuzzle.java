@@ -27,12 +27,11 @@ public class LogicGridPuzzle {
         /*implement scanner; string variables difficulty(easy/medium/hard)
         + theme(travel/crime/fantasy)*/
         Scanner scan = new Scanner(System.in);
-        String input = "";
-        String travel, crime, fantasy;
+        String theme, difficulty;
+        String crime, fantasy;
         String easy, medium, hard;
         String instructionsPath = "NewGame/Instructions.txt";
         String themePath = "NewGame/Theme/ChooseTheme.txt";
-        String easyTravel = "NewGame/Theme/Travel/Easy1.txt";
         
 
             //read the instructions file to the game
@@ -43,8 +42,10 @@ public class LogicGridPuzzle {
             }catch (IOException e){
             System.err.println("An error occurred" + e.getMessage());
         }
-         while (input.equalsIgnoreCase("n")){
-            String game = scan.nextLine();//scanning n
+
+            String input = scan.nextLine();
+            //Begining a new game
+            while (input.equalsIgnoreCase("n")){
             
             //read the theme file
             try(Scanner scanner = new Scanner(new File(themePath))){
@@ -54,40 +55,65 @@ public class LogicGridPuzzle {
             }catch (IOException e){
             System.err.println("An error occurred" + e.getMessage());
         }
- 
-            String theme = scan.nextLine();//scanning theme
-        }
-            //switch case depending on theme choosen
-
-        
-            //read the dificulty file
-             try(Scanner scanner = new Scanner(new File(easyTravel))){
+            System.out.println("Enter theme:");
+            theme = scan.nextLine().toLowerCase();
+            
+            System.out.println("Enter difficulty:");
+            difficulty = scan.nextLine().toLowerCase();
+            
+             String fileName = "";
+    
+             //Switch case for theme and their difficulties
+             switch (theme){
+                 case "crime":
+                     switch (difficulty){
+                        case "easy":
+                            fileName = "NewGame/Theme/Crime/Easy1.txt";
+                            break;
+                        case "medium":
+                            fileName = "NewGame/Theme/Crime/Medium1.txt";
+                            break;
+                        case "hard":
+                            fileName = "NewGame/Theme/Crime/Hard1.txt";
+                            break;
+                        default:
+                            System.out.println("Invaild theme and/or difficulty entered");
+                            return;
+                     }
+                     break;
+                
+                 case "fantasy":
+                     switch (difficulty){
+                        case "easy":
+                            fileName = "NewGame/Theme/Fantasy/Easy1.txt";
+                            break;
+                        case "medium":
+                            fileName = "NewGame/Theme/Fantasy/Medium1.txt";
+                            break;
+                        case "hard":
+                            fileName = "NewGame/Theme/Fantasy/Hard1.txt";
+                            break;
+                        default:
+                            System.out.println("Invaild theme and/or difficulty entered");
+                            return;
+                     }
+                     break;
+             }
+             
+             try(Scanner scanner = new Scanner(new File(fileName))){
                 while(scanner.hasNextLine()){
                     System.out.println(scanner.nextLine());
             }
             }catch (IOException e){
-            System.err.println("An error occurred" + e.getMessage());
+            System.err.println("An error occurred" + e.getMessage() + "with retrieving game file");
         }
- 
-            String difficulty = scan.nextLine();//scanning difficulty  
-            
-            
-        while(input.equalsIgnoreCase("n")){
-            
-            System.out.println("""
-                                    Choose Difficulty
-                              Type in choice of difficulty:
-                                -Easy
-                                -Medium
-                                -Hard
-                              """);
-            difficulty = scan.nextLine();
-            
-            Game newGame = new Game(theme, difficulty);
-            System.out.println(newGame);
-    }
+             }
+        }
 
-    
+
+            
+            
+           
     }
 
     //prompt to see highscores
@@ -96,33 +122,8 @@ public class LogicGridPuzzle {
          //Score player = new Score();
          //highscore.add(player);
     
-}
 
-interface difficulty{
-    public void setDifficulty(String difficulty);
-    public String getDifficulty();
-    
-}
-interface theme{
-    private String Theme = "";
-    
-    public void setTheme(String Theme);
-    public String getTheme();
-    
-    switch(inT.equalsIgnoreCase()){
-        case "Travel":
-            difficulty path;
-            break;
-        case "Crime":
-            difficulty path;
-            break;
-        case "Fantasy" :
-            difficulty path;
-            break; 
-    }
-}
-
-class Game implements difficulty, theme{
+/*class Game{
     String difficulty, easy, medium, hard;
     String theme, travel, crime, fantasy;
 
